@@ -1,0 +1,95 @@
+/* Estilos generales */
+body{
+  background-color: whitesmoke; /* Establece el color de fondo de la página */
+} 
+
+/* Estilos para el encabezado */
+header {
+     background-color: #E43636; /* Establece el color de fondo del encabezado */
+    color: white; /* Establece el color del texto del encabezado */
+    padding: 10px; /* Añade espacio interno alrededor del encabezado */
+    text-align: center; /* Alinea el texto al centro */
+    display: flex; /* Usa el modelo de caja flexible para el diseño */
+    justify-content: space-between; /* Distribuye los elementos equitativamente en el espacio disponible */
+}
+
+/* Estilos para las imágenes en el lado izquierdo del encabezado */
+.left-images img {
+    width: 100px; /* Establece el ancho de las imágenes */
+    height: 100px; /* Establece la altura de las imágenes */
+}
+
+/* Estilos para la imagen del carrito de compras en el lado derecho del encabezado */
+.right-image img {
+    margin-left: auto; /* Mueve la imagen hacia la derecha */
+    width: 100px; /* Establece el ancho de la imagen */
+    height: 100px; /* Establece la altura de la imagen */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    list-style-type: none; /* Quita los puntos de la lista */
+    display: flex; /* Usa el modelo de caja flexible para el diseño */
+    gap: 30px; /* Establece el espacio entre los elementos de la lista */
+    margin-left: 0; /* Establece el margen izquierdo de la barra de navegación */
+    font-size: 15px; /* Establece el tamaño de fuente de la barra de navegación */
+    font-family: 'Just Another Hand'; /* Establece la familia de fuentes de la barra de navegación */
+    background-color: whitesmoke; /* Establece el color de fondo de la barra de navegación */
+    padding: 10px; /* Añade espacio interno alrededor de la barra de navegación */
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.navbar li {
+    display: inline; /* Muestra los elementos de la lista en línea (horizontalmente) */
+}
+
+/* Estilos para los enlaces dentro de los elementos de la lista de navegación */
+.navbar li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #000; /* Establece el color del texto de los enlaces */
+    font-weight: bold; /* Establece el grosor de fuente de los enlaces */
+    transition: .7s; /* Establece la duración de la transición al pasar el cursor sobre los enlaces */
+}
+
+/* Efecto de cambio de color al pasar el cursor sobre los enlaces de la barra de navegación */
+.navbar li a:hover {
+    color: white; /* Cambia el color del texto al pasar el cursor sobre los enlaces */
+    background-color: red; /* Cambia el color de fondo al pasar el cursor sobre los enlaces */
+}
+
+main {
+  max-width: 800px; /* Define el ancho máximo del elemento main */
+  margin: 100px auto; /* Establece los márgenes automáticos para centrar el elemento horizontalmente */
+  padding: 20px; /* Añade un espacio interno alrededor del contenido del main */
+  font-family: 'Just Another Hand'; /* Establece la familia de fuentes de la barra de navegación */
+   font-size: 20px; /* Establece el tamaño de fuente de la barra de navegación */
+}
+h1 {
+  text-align: center; /* Centra el texto del h1 horizontalmente */
+}
+
+ 
+ /*footer*/
+  body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            background-color: #E43636; 
+            color: white; 
+            text-align: left; 
+            padding: 10px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+        }
+
+        .footer a {
+            color: white;
+            margin-bottom: 10px; /* Agrega un espacio vertical entre los enlaces */
+            display: block; /* Hace que cada enlace ocupe toda la anchura disponible */
+            font-family: 'Just Another Hand'; /* Establece la familia de fuentes de la barra de navegación */
+            font-size: 20px; /* Establece el tamaño de fuente de la barra de navegación */
+        }

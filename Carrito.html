@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrito de compra</title>
+    <link rel="stylesheet" type="text/css" href="css/carrito.css">
+     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+    
+</head>    
+    
+<body>
+    <header>
+        <div class="left-images">
+            <!-- Aquí coloca tus imágenes de la izquierda -->
+            <img src="img/index/Logo.png" alt="Logo">
+            <img src="img/index/nombre empresa.png" alt="Nombre de la empresa">
+        </div>
+        <div class="right-image">
+            <!-- Aquí coloca la imagen del carrito de compras -->
+               
+            <a href="carrito.html"> <img src="img/carrito.png" alt="Carrito de compras"></a>
+        </div>
+    </header>
+   
+     <ul class="navbar"> <!--<ul> es una lista que contendrá elementos <li> -->
+            <li><a href="index.html">INICIO</a></li> <!-- Cada elemento de la lista es un botón de navegación -->
+            <li><a href="TECLADOS.html">TECLADOS</a></li>
+            <li><a href="MOUSES.html">MOUSES</a></li>
+            <li><a href="AURICULARES/CASCOS.html">AURICULARES/CASCOS</a></li>
+            <li><a href="TORRES.html">TORRES</a></li>
+            <li><a href="COMPONENTES PC.html">COMPONENTES PC</a></li>
+            <li><a href="PORTATILES.html">PORTATILES</a></li>
+        </ul>
+
+<div class="contenedor-carrito">
+    <p>Carrito</p>
+    <div>
+      <button>Oh! Tu carrito está vacío</button>
+    </div>
+    <button onclick="irATienda()">Volver a la tienda</button>
+</div>
+
+      
+<footer class="footer">
+  <nav>
+    <ul>
+      <li><a href="Terminos y Condiciones.html">Términos y condiciones</a></li>
+      <li><a href="Política de privacidad.html">Política de privacidad</a></li>
+      <li><a href="Política de envíos.html">Política de envíos</a></li>
+    </ul>
+  </nav>
+</footer>
+<script>
+function irATienda() {
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>

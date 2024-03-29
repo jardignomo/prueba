@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Pagina principal</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	 <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+
+</head>    
+    
+<body>
+    <header>
+        <div class="left-images">
+            <!-- Aquí coloca tus imágenes de la izquierda -->
+            <img src="img/index/Logo.png" alt="Logo">
+            <img src="img/index/nombre empresa.png" alt="Nombre de la empresa">
+        </div>
+        <div class="right-image">
+            <!-- Aquí coloca la imagen del carrito de compras -->
+               
+            <a href="Carrito.html"> <img src="img/carrito.png" alt="Carrito de compras"></a>
+        </div>
+    </header>
+
+ <div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="BUSCAR PRODUCTOS">
+    <button class="search-button" onclick="buscarProducto()">Buscar</button>
+</div>
+
+<div id="resultados-busqueda">
+    <!-- Aquí se mostrarán los resultados de la búsqueda -->
+</div>
+
+
+    <ul class="navbar"> <!--<ul> es una lista que contendrá elementos <li> -->
+            <li><a href="index.html">INICIO</a></li> <!-- Cada elemento de la lista es un botón de navegación -->
+            <li><a href="TECLADOS.html">TECLADOS</a></li>
+            <li><a href="MOUSES.html">MOUSES</a></li>
+            <li><a href="AURICULARES/CASCOS.html">AURICULARES/CASCOS</a></li>
+            <li><a href="TORRES.html">TORRES</a></li>
+            <li><a href="COMPONENTES PC.html">COMPONENTES PC</a></li>
+            <li><a href="PORTATILES.html">PORTATILES</a></li>
+        </ul>
+
+<body>
+
+<div class="container">
+  <div class="slider">
+    <!-- Contenido del carrusel -->
+    <img src="img/index/carrusel1.jpg" alt="Slide 1">
+    <img src="img/index/Logo.png" alt="Slide 2">
+    <!-- Añade más imágenes según sea necesario -->
+  </div>
+  <!-- Flecha izquierda -->
+  <div class="flecha left">&#8249;</div>
+  <!-- Flecha derecha -->
+  <div class="flecha right">&#8250;</div>
+</div>
+
+<!-- Carrusel de Productos Más Vendidos -->
+<div class="product-carousel-container">
+  <h2 class="carousel-title">Los Más Vendidos</h2>
+  		<div class="product-carousel">
+
+		    <div class="producto" onclick="location.href='pagina_producto1.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 1">
+		      <h2>Nombre del Producto 1</h2>
+		    </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto2.html';">
+		      <img src="img/index/LENOVO.png" alt="Producto 2">
+		      <h2>Nombre del Producto 2</h2>
+		    </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto3.html';">
+		      <img src="producto3.jpg" alt="Producto 3">
+		      <h2>Nombre del Producto 3</h2>
+		      <p>Descripción breve del Producto 3.</p>
+		    </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto4.html';">
+		      <img src="producto4.jpg" alt="Producto 4">
+		      <h2>Nombre del Producto 4</h2>
+		      <p>Descripción breve del Producto 4.</p>
+		    </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="producto5.jpg" alt="Producto 5">
+		      <h2>Nombre del Producto 5</h2>
+		      <p>Descripción breve del Producto 5.</p>
+		    </div>
+ 		</div>
+</div>
+
+  <!-- Carrusel de Novedades -->
+<div class="new-arrivals-carousel-container">
+	 <h3 class="carousel-title">Novedades</h3>
+  	<div class="new-arrivals-carousel">
+
+		    <div class="producto" onclick="location.href='pagina_producto1.html';">
+		      <img src="img/index/Logo.png" alt="Producto 1">
+		      <h3>Nombre del Producto 1</h3>
+		    </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto2.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 2">
+		      <h3>Nombre del Producto 2</h3>
+		      </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto3.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 3">
+		      <h3>Nombre del Producto 3</h3>
+		    </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto4.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 4">
+		      <h3>Nombre del Producto 4</h3>
+		    </div>
+
+		    <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 5</h3>
+		    </div>
+
+		      <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 6</h3>
+		    </div>
+
+		     <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 7</h3>
+		    </div>
+
+		     <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 8</h3>
+		    </div>
+
+		     <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 9</h3>
+		    </div>
+
+		     <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 10</h3>
+		    </div>
+
+		         <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 11</h3>
+		    </div>
+
+		      <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 12</h3>
+		    </div>
+
+		     <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 13</h3>
+		    </div>
+
+		     <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 14</h3>
+		    </div>
+
+		     <div class="producto" onclick="location.href='pagina_producto5.html';">
+		      <img src="img/index/carrusel1.jpg" alt="Producto 5">
+		      <h3>Nombre del Producto 15</h3>
+		    </div>
+  
+	</div>
+</div>
+
+<!-- Título "Logos" -->
+<h2 class="carousel-title">Distribuidor oficiales</h2>
+
+<!-- Carrusel de Logos -->
+<div class="logos-carousel-container">
+  <div class="logos-carousel">
+
+    <img src="img/index/ASUS.png" alt="Logo 1">
+
+    <img src="img/index/LENOVO.png" alt="Logo 2">
+
+    <img src="img/index/NVIDIA.png" alt="Logo 3">
+
+      <img src="img/index/ASUS.png" alt="Logo 4">
+
+    <img src="img/index/LENOVO.png" alt="Logo 5">
+
+    <img src="img/index/NVIDIA.png" alt="Logo 6"> 
+
+    <img src="img/index/ASUS.png" alt="Logo 7">
+
+    <img src="img/index/LENOVO.png" alt="Logo 8">
+
+    <img src="img/index/NVIDIA.png" alt="Logo 9">
+
+    <img src="img/index/nombre empresa.png" alt="Logo 10">
+
+    <img src="img/index/Logo.png" alt="Logo 12">
+
+     <img src="img/index/ASUS.png" alt="Logo 13">
+   
+  </div>
+</div>
+
+<footer class="footer">
+  <nav>
+    <ul>
+      <li><a href="Terminos y Condiciones.html">Términos y condiciones</a></li>
+      <li><a href="Política de privacidad.html">Política de privacidad</a></li>
+      <li><a href="Política de envíos.html">Política de envíos</a></li>
+    </ul>
+  </nav>
+</footer>
+
+<script>
+// Datos de ejemplo de productos
+        var productos = [
+            { nombre: "Producto 1", descripcion: "Descripción del Producto 1" },
+            { nombre: "Producto 2", descripcion: "Descripción del Producto 2" },
+            { nombre: "Producto 3", descripcion: "Descripción del Producto 3" }
+            // Agrega más productos según sea necesario
+        ];
+
+        // Función para buscar productos
+        function buscarProducto() {
+            var query = document.getElementById("search-input").value.toLowerCase();
+            var resultados = productos.filter(function(producto) {
+                return producto.nombre.toLowerCase().includes(query) || producto.descripcion.toLowerCase().includes(query);
+            });
+            mostrarResultados(resultados);
+        }
+
+        // Función para mostrar resultados de búsqueda
+        function mostrarResultados(resultados) {
+            var resultadosContainer = document.getElementById("resultados-busqueda");
+            resultadosContainer.innerHTML = "";
+            if (resultados.length === 0) {
+                resultadosContainer.innerHTML = "<p>No se encontraron resultados</p>";
+            } else {
+                resultados.forEach(function(producto) {
+                    var productoHTML = `
+                        <div class="producto">
+                            <h3>${producto.nombre}</h3>
+                            <p>${producto.descripcion}</p>
+                        </div>
+                    `;
+                    resultadosContainer.innerHTML += productoHTML;
+                });
+            }
+        }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  var slideIndex = 0;
+  var slides = $('.slider img');
+  var totalSlides = slides.length;
+
+  function showSlide(index) {
+    slides.css('transform', 'translateX(-' + index * 100 + '%)');
+  }
+
+  $('.left').click(function(){
+    slideIndex = (slideIndex === 0) ? totalSlides - 1 : slideIndex - 1;
+    showSlide(slideIndex);
+  });
+
+  $('.right').click(function(){
+    slideIndex = (slideIndex === totalSlides - 1) ? 0 : slideIndex + 1;
+    showSlide(slideIndex);
+  });
+});
+</script>
+ 
+<script>//LO MAS VENDIDOS
+  // Función para mover el carrusel automáticamente cada 10 segundos
+  setInterval(function() {
+    var carousel = document.querySelector('.product-carousel');
+    var firstProduct = carousel.children[0];
+    carousel.appendChild(firstProduct); // Mueve el primer producto al final del carrusel
+  }, 10000); // Cambia cada 10 segundos (10000 milisegundos)
+</script>
+
+<script>//DISTRIBUIDORES OFICIALES
+  // Variables para el carrusel automático
+  var slideInterval; // Variable para almacenar el intervalo del carrusel automático
+  var scrollAmount = 5; // Cantidad de desplazamiento (en pixels)
+  var carouselWidth = document.querySelector('.logos-carousel').scrollWidth; // Ancho total del carrusel
+  var currentScroll = 0; // Posición de desplazamiento actual
+
+  // Iniciar el carrusel automático al cargar la página
+  startScroll();
+
+ // Función para iniciar el carrusel automático (nunca se detendrá)
+function startScroll() {
+  slideInterval = setInterval(scrollRight, 1000); // Desplaza hacia la derecha cada 1 segundos
+}
+
+// Función para desplazar el carrusel hacia la derecha
+function scrollRight() {
+  currentScroll += scrollAmount; // Aumenta la posición de desplazamiento
+  if (currentScroll >= carouselWidth) {
+    currentScroll = 0; // Vuelve al principio cuando alcanza el final del carrusel
+  }
+  document.querySelector('.logos-carousel').style.transform = 'translateX(-' + currentScroll + 'px)'; // Aplica el desplazamiento
+}
+</script>
+
+</body>
+</html>

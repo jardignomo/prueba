@@ -1,0 +1,661 @@
+/* Estilos generales */
+body {
+    background-color: #D3D3D3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #E43636;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para las imágenes en el lado izquierdo del encabezado */
+.left-images img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilos para la imagen del carrito de compras en el lado derecho del encabezado */
+.right-image img {
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilos para el contenedor del buscador */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilos para el campo de búsqueda */
+.search-input {
+    flex: 1;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Just Another Hand';
+    outline: none;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Just Another Hand';
+    transition: background-color 0.3s;
+}
+
+/* Efecto de cambio de color al pasar el cursor sobre el botón de búsqueda */
+.search-button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para los resultados de búsqueda */
+#resultados-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#resultados-busqueda p {
+    color: red;
+    font-weight: bold;
+    font-size: 27px;
+    text-align: center;
+    font-family: 'Just Another Hand';
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 0;
+    font-size: 15px;
+    font-family: 'Just Another Hand';
+    background-color: whitesmoke;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.navbar li {
+    display: inline;
+}
+
+/* Estilos para los enlaces dentro de los elementos de la lista de navegación */
+.navbar li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: .7s;
+}
+
+/* Efecto de cambio de color al pasar el cursor sobre los enlaces de la barra de navegación */
+.navbar li a:hover {
+    color: white;
+    background-color: red;
+}
+
+ /* Estilos de carrusel  para el carrusel */
+  .container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  .flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .flecha.left {
+    left: 10px;
+  }
+
+  .flecha.right {
+    right: 10px;
+  }
+
+/* Estilos para el nuevo contenedor principal del carrusel lo mas */
+.product-carousel-container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título del carrusel */
+.product-carousel-container .carousel-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Just Another Hand';
+}
+
+/* Estilos para el nuevo carrusel */
+.product-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Estilos para cada producto en el nuevo carrusel */
+.product-carousel .producto {
+    flex: 0 0 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Just Another Hand';
+}
+
+/* Estilos para las imágenes de los productos en el nuevo carrusel */
+.product-carousel .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para el título de los productos en el nuevo carrusel */
+.product-carousel .producto h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el texto de los productos en el nuevo carrusel */
+.product-carousel .producto p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Estilos para el nuevo carrusel de novedades */
+.new-arrivals-carousel {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para cada producto en el nuevo carrusel de novedades */
+.new-arrivals-carousel .producto {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Just Another Hand';
+}
+
+/* Estilos para las imágenes de los productos en el nuevo carrusel de novedades */
+.new-arrivals-carousel .producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el título de los productos en el nuevo carrusel de novedades */
+.new-arrivals-carousel .producto h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Just Another Hand';
+}
+
+/* Estilos para el texto de los productos en el nuevo carrusel de novedades */
+.new-arrivals-carousel .producto p {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+    font-family: 'Just Another Hand';
+}
+
+/* Estilos para el título del carrusel de logos */
+.carousel-title {
+    text-align: center; /* Centramos horizontalmente */
+    font-family: 'Just Another Hand'; /* Aplicamos la tipografía */
+    font-size: 30px; /* Aplicamos el tamaño de fuente */
+}
+
+/* Estilos para el contenedor principal del carrusel de logos */
+.logos-carousel-container {
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centramos horizontalmente */
+}
+
+/* Estilos para el carrusel de logos */
+.logos-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center; /* Centramos verticalmente */
+}
+
+/* Estilos para los logos en el carrusel */
+.logos-carousel img {
+    max-height: 100%;
+    margin: 0 10px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #E43636;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Just Another Hand';
+    font-size: 20px;
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Estilos para el encabezado */
+    header {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center; /* Alinea verticalmente los elementos */
+    }
+
+    /* Estilos para las imágenes en el lado izquierdo del encabezado */
+    .left-images img {
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para la imagen del carrito de compras en el lado derecho del encabezado */
+    .right-image img {
+        margin-top: 10px; /* Agrega 'img' para seleccionar la imagen correctamente */
+    }
+
+    /* Estilos para el contenedor del buscador en dispositivos móviles */
+    .search-container {
+        width: 90%;
+    }
+
+    /* Estilos para el campo de búsqueda en dispositivos móviles */
+    .search-input {
+        font-size: 14px;
+    }
+
+    /* Estilos para el botón de búsqueda en dispositivos móviles */
+    .search-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Cambia la barra de navegación a una columna vertical */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ajusta los elementos de la lista para que se muestren como bloques */
+    .navbar li {
+        display: block;
+        width: 100%;
+    }
+
+    /* Asegúrate de que los enlaces ocupen todo el ancho disponible */
+    .navbar li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    }
+
+    /* Ajusta el contenedor del carrusel para dispositivos móviles */
+    .container {
+        height: auto; /* Altura automática para ajustarse al contenido */
+    }
+
+    /* Asegúrate de que las imágenes del carrusel ocupen todo el ancho y alto disponibles */
+    .slider img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 400px; /* Altura automática para mantener la proporción */
+        object-fit: cover; /* Ajusta la imagen para cubrir completamente */
+    }
+
+    /* Ajusta las flechas de navegación para que no se superpongan con el contenido */
+    .flecha {
+        background-color: rgba(255, 255, 255, 0.7); /* Fondo más opaco para mejor visibilidad */
+        padding: 5px; /* Reduce el padding */
+    }
+
+    /* Posiciona las flechas dentro del contenedor para evitar que se salgan de la vista */
+    .left, .right {
+        top: auto;
+        bottom: 10px; /* Ubica las flechas en la parte inferior del carrusel */
+    }
+
+    /* Ajusta la posición de la flecha izquierda para dispositivos móviles */
+    .left {
+        left: 50%;
+        transform: translateX(-60%); /* Ajusta la posición horizontalmente */
+    }
+
+    /* Ajusta la posición de la flecha derecha para dispositivos móviles */
+    .right {
+        right: 50%;
+        transform: translateX(60%); /* Ajusta la posición horizontalmente */
+    }
+
+    /* Ajusta el ancho del contenedor principal del carrusel */
+    .product-carousel-container {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    /* Ajusta el tamaño del título del carrusel */
+    .carousel-title {
+        font-size: 20px; /* Reduce el tamaño de la fuente para dispositivos más pequeños */
+    }
+
+    /* Cambia la disposición de los productos a una fila vertical */
+    .product-carousel {
+        flex-direction: column; /* Apila los elementos verticalmente */
+    }
+
+    /* Ajusta el tamaño de cada producto en el carrusel */
+    .product-carousel .producto {
+        flex: 0 0 100%; /* Cada producto ocupa el 100% del espacio horizontal */
+        margin-bottom: 20px; /* Añade un margen inferior entre productos */
+    }
+
+    /* Ajusta el tamaño de las imágenes de los productos */
+    .product-carousel .producto img {
+        width: 80%; /* Reduce el ancho de las imágenes para mejor visualización */
+        margin: 0 auto; /* Centra las imágenes horizontalmente */
+    }
+
+    /* Ajusta el tamaño del título de los productos */
+    .product-carousel .producto h2 {
+        font-size: 18px; /* Reduce el tamaño de la fuente del título del producto */
+    }
+
+    /* Ajusta el tamaño del texto de los productos */
+    .product-carousel .producto p {
+        font-size: 14px; /* Reduce el tamaño de la fuente del texto del producto */
+    }
+
+    /* Ajusta el ancho del contenedor principal del carrusel de novedades */
+    .new-arrivals-carousel-container {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px auto; /* Reduce el margen para dispositivos más pequeños */
+    }
+
+    /* Ajusta el tamaño del título "Novedades" */
+    .carousel-title {
+        font-size: 18px; /* Reduce el tamaño de la fuente para dispositivos más pequeños */
+        margin-top: 10px; /* Reduce el margen superior */
+    }
+
+    /* Cambia la disposición de los productos a dos columnas */
+    .new-arrivals-carousel {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas de tamaño igual */
+        gap: 10px; /* Reduce el espacio entre las celdas de la cuadrícula */
+    }
+
+    /* Ajusta el tamaño de cada producto en el carrusel */
+    .new-arrivals-carousel .producto {
+        padding: 10px; /* Reduce el espacio interno alrededor del producto */
+    }
+
+    /* Ajusta el tamaño de las imágenes de los productos */
+    .new-arrivals-carousel .producto img {
+        border-radius: 5px; /* Mantiene los bordes redondeados */
+    }
+
+    /* Ajusta el tamaño del título de los productos */
+    .new-arrivals-carousel .producto h3 {
+        font-size: 14px; /* Reduce el tamaño de la fuente del título del producto */
+    }
+
+    /* Ajusta el tamaño del texto de los productos */
+    .new-arrivals-carousel .producto p {
+        font-size: 12px; /* Reduce el tamaño de la fuente del texto del producto */
+    }
+
+    /* Ajusta el ancho del contenedor principal del carrusel de logos */
+    .logos-carousel-container {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 120px; /* Reduce aún más la altura del contenedor */
+        margin: 5px auto; /* Reduce el margen para dispositivos más pequeños */
+    }
+
+    /* Ajusta el carrusel de logos */
+    .logos-carousel {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+        justify-content: center; /* Centra los logos horizontalmente */
+        align-items: center; /* Centra los logos verticalmente */
+    }
+
+    /* Ajusta los logos dentro del carrusel */
+    .logos-carousel img {
+        max-height: 60px; /* Reduce aún más la altura máxima de los logos */
+        margin: 2px; /* Reduce el margen entre los logos */
+    }
+
+    /* Ajusta el tamaño del texto del pie de página */
+    .footer {
+        font-size: 14px; /* Reduce el tamaño de la fuente para el texto del pie de página */
+        padding: 5px; /* Ajusta el padding para reducir el espacio */
+        margin-top: 10px; /* Ajusta el margen superior para evitar la superposición con otros elementos */
+    }
+
+    /* Ajusta el tamaño del texto de los enlaces del pie de página */
+    .footer a {
+        font-size: 14px; /* Reduce el tamaño de la fuente para los enlaces */
+        margin-bottom: 5px; /* Ajusta el espacio entre enlaces */
+    }
+}
+
+
+/* Estilos para pantallas de mínimo 1080px */
+@media screen and (min-width: 1080px) {
+    /* Estilos para el encabezado */
+    header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Estilos para las imágenes en el lado izquierdo del encabezado */
+    .left-images img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Estilos para la imagen del carrito de compras en el lado derecho del encabezado */
+    .right-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Estilos para el contenedor del buscador */
+    .search-container {
+        width: 80%;
+        max-width: 400px;
+        padding: 10px 20px;
+    }
+
+    /* Estilos para el campo de búsqueda */
+    .search-input {
+        font-size: 16px;
+    }
+
+    /* Estilos para el botón de búsqueda */
+    .search-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Estilos para la barra de navegación */
+    .navbar {
+        gap: 30px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    /* Estilos para los elementos de la lista de navegación */
+    .navbar li {
+        display: inline;
+    }
+
+    /* Estilos para los enlaces dentro de los elementos de la lista de navegación */
+    .navbar li a {
+        font-size: 15px;
+    }
+
+    /* Estilos de carrusel para el carrusel */
+    .container {
+        max-width: 1000px;
+    }
+
+    /* Estilos para el nuevo contenedor principal del carrusel lo mas */
+    .product-carousel-container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+    /* Estilos para el título del carrusel */
+    .product-carousel-container .carousel-title {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para el nuevo carrusel */
+    .product-carousel {
+        display: flex;
+    }
+
+    /* Estilos para cada producto en el nuevo carrusel */
+    .product-carousel .producto {
+        flex: 0 0 20%;
+        padding: 20px;
+    }
+
+    /* Estilos para las imágenes de los productos en el nuevo carrusel */
+    .product-carousel .producto img {
+        border-radius: 10px;
+    }
+
+    /* Estilos para el título de los productos en el nuevo carrusel */
+    .product-carousel .producto h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    /* Estilos para el nuevo carrusel de novedades */
+    .new-arrivals-carousel {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* Estilos para cada producto en el nuevo carrusel de novedades */
+    .new-arrivals-carousel .producto {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* Estilos para las imágenes de los productos en el nuevo carrusel de novedades */
+    .new-arrivals-carousel .producto img {
+        border-radius: 5px;
+    }
+
+    /* Estilos para el título del carrusel de logos */
+    .carousel-title {
+        font-size: 30px;
+    }
+
+    /* Estilos para el contenedor principal del carrusel de logos */
+    .logos-carousel-container {
+        width: 90%;
+        height: 200px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    /* Estilos para el carrusel de logos */
+    .logos-carousel {
+        align-items: center;
+    }
+
+    /* Estilos para los logos en el carrusel */
+    .logos-carousel img {
+        margin: 0 10px;
+    }
+
+    /* Estilos para el pie de página */
+    .footer {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .footer a {
+        font-size: 20px;
+    }
+}
